@@ -28,12 +28,14 @@ OSCData::OSCData(const char * s){
 
 
 
+#ifndef ESP8266
 OSCData::OSCData(int32_t i){
 	error = OSC_OK;
 	type = 'i';
 	bytes = 4;
 	data.i = i;
 }
+#endif
 OSCData::OSCData(int i){
 	error = OSC_OK;
 	type = 'i';

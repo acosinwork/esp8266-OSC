@@ -91,7 +91,9 @@ public:
 #if defined(__SAM3X8E__)
 	OSCData (int16_t);
 #endif
+#ifndef ESP8266
 	OSCData (int32_t);
+#endif
     OSCData (int);
     OSCData (unsigned int);
 	OSCData (float);
